@@ -1,0 +1,35 @@
+{
+  "name": "grunt-capo",
+  "version": "0.0.0",
+  "description": "Grunt plugin for capo",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "grunt test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:msemenistyi/grunt-capo.git"
+  },
+  "keywords": [
+    "gruntplugin",
+    "grunt",
+    "capo",
+    "events",
+    "subscription",
+    "trigger",
+    "mediator"
+  ],
+  "author": "msemenistyi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/msemenistyi/grunt-capo/issues"
+  },
+  "dependencies": {
+    "capo": "0.1.x"
+  },
+  "devDependencies": {
+    "grunt-simple-mocha": "~0.4.0",
+    "grunt": "~0.4.2",
+    "grunt-contrib-clean": "~0.5.0"
+  }
+}
