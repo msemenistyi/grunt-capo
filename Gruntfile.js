@@ -14,14 +14,20 @@ module.exports = function(grunt) {
 
 		capo: {
 			options:{
-				report: 'html',
-
+				report: 'html'
 			},
-			task1: {src: './javascripts'}
+			fixtures_folder: {src: ['./test/fixtures/**/*.js']}
 		},
 
 		simplemocha: {
+			options: {
+				globals: ['should'],
+				timeout: 5000,
+				ignoreLeaks: false,
+				reporter: 'dot'
+			},
 
+			all: { src: ['test/**/*test.js'] }			
 		},
 
 		clean: {

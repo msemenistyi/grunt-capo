@@ -25,11 +25,12 @@
     "url": "https://github.com/msemenistyi/grunt-capo/issues"
   },
   "dependencies": {
-    "capo": "0.1.x"
+    "capo": "0.2.x"
   },
   "devDependencies": {
     "grunt-simple-mocha": "~0.4.0",
     "grunt": "~0.4.2",
-    "grunt-contrib-clean": "~0.5.0"
+    "grunt-contrib-clean": "~0.5.0",
+    "should": "~3.1.2"
   }
 }

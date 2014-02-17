@@ -1,7 +1,6 @@
-# grunt-capo
-[![Build Status](https://travis-ci.org/msemenistyi/grunt-capo.png)](https://travis-ci.org/msemenistyi/grunt-capo)
+# grunt-capo [![Build Status](https://travis-ci.org/msemenistyi/grunt-capo.png)](https://travis-ci.org/msemenistyi/grunt-capo)
 
-> 
+> [Capo](https://github.com/msemenistyi/capo) task fro Grunt
 
 ## Getting Started
 This plugin requires Grunt `~0.4.1`
@@ -11,7 +10,7 @@ If you haven't used [Grunt](http://gruntjs.com/) before, be sure to check out th
 ##Install
 
 ```shell
-npm install grunt-grep --save-dev
+npm install grunt-capo --save-dev
 ```
 
 Once the plugin has been installed, it may be enabled inside your Gruntfile with this line of JavaScript:
@@ -23,10 +22,32 @@ grunt.loadNpmTasks('grunt-capo');
 ## The "capo" task
 
 ### Overview
+This task helps conituous integration of [Capo](https://github.com/msemenistyi/capo)
+module. It may be used for generating reports as a build step.
+Another option is to use it as validator for all the subscriptions to have 
+corresponding publishers (**strict** options should be truthy).
+
 
 ### Options
+**event**   -e --event - event name to perform search on. Can be just leading chars
+of event name (e.g. `-e ap` will find all the events starting with these chars:
+`ap, app, ap:message, app:context, application`).  
+**object**  -o --object - mediator object name (e.g. mediator, Backbone). Case sensitive.  
+**report**  -r --report - type of report. Options are: `html`, `cli`. **Default**
+is `html`. String value should be specified right after flag.  
+**strict**  --strict - throw error on sub for event with 0 pubs. **Default** `false`.
 
 ### Basic Usage
+```js
+	...
+	capo: {
+		options:{
+			report: 'html'
+		},
+		fixtures_folder: {src: ['./test/fixtures/**/*.js']}
+	},
+	...
+```
 
 ##Contributing
 Feel free to open issues and send PRs, though make sure that you create tests

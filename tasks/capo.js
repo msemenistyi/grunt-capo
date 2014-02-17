@@ -9,11 +9,13 @@
 'use strict';
 
 module.exports = function(grunt) {
-	
+
 	var path = require('path'),
 		capo = require('capo');
 
 	grunt.registerMultiTask('capo', 'Event-managing module wrapper', function(){
+
+		var done = this.async();
 		
 		var defaultOptions = {
 			report: 'html',
@@ -29,9 +31,12 @@ module.exports = function(grunt) {
 			 }
 			}
 		}
-		capo(this.filesSrc[0], options.object).event(options.event).report(options.report).
+		capo(this.filesSrc, options.object, options).event(options.event).report(options.report).
 				find(function(err, result){
-			console.log(result);
+			if (err){
+				grunt.log.fail(err);
+			}
+			done(!err);
 		});
 
 	});
