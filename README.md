@@ -1,6 +1,6 @@
 # grunt-capo [![Build Status](https://travis-ci.org/msemenistyi/grunt-capo.png)](https://travis-ci.org/msemenistyi/grunt-capo)
 
-> [Capo](https://github.com/msemenistyi/capo) task fro Grunt
+> [Capo](https://github.com/msemenistyi/capo) task for Grunt
 
 ## Getting Started
 This plugin requires Grunt `~0.4.1`
@@ -26,7 +26,6 @@ This task helps conituous integration of [Capo](https://github.com/msemenistyi/c
 module. It may be used for generating reports as a build step.
 Another option is to use it as validator for all the subscriptions to have 
 corresponding publishers (**strict** options should be truthy).
-
 
 ### Options
 **event**   -e --event - event name to perform search on. Can be just leading chars
