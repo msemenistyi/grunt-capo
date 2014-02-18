@@ -14,7 +14,8 @@ module.exports = function(grunt) {
 
 		capo: {
 			options:{
-				report: 'html'
+				report: 'html',
+				generate: true
 			},
 			fixtures_folder: {src: ['./test/fixtures/**/*.js']}
 		},

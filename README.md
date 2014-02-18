@@ -5,7 +5,11 @@
 ## Getting Started
 This plugin requires Grunt `~0.4.1`
 
-If you haven't used [Grunt](http://gruntjs.com/) before, be sure to check out the [Getting Started](http://gruntjs.com/getting-started) guide, as it explains how to create a [Gruntfile](http://gruntjs.com/sample-gruntfile) as well as install and use Grunt plugins. Once you're familiar with that process, you may install this plugin with this command:
+If you haven't used [Grunt](http://gruntjs.com/) before, be sure to check out the 
+[Getting Started](http://gruntjs.com/getting-started) guide, as it explains how 
+to create a [Gruntfile](http://gruntjs.com/sample-gruntfile) as well as install 
+and use Grunt plugins. Once you're familiar with that process, you may install 
+this plugin with this command:
 
 ##Install
 
@@ -13,7 +17,8 @@ If you haven't used [Grunt](http://gruntjs.com/) before, be sure to check out th
 npm install grunt-capo --save-dev
 ```
 
-Once the plugin has been installed, it may be enabled inside your Gruntfile with this line of JavaScript:
+Once the plugin has been installed, it may be enabled inside your Gruntfile 
+with this line of JavaScript:
 
 ```js
 grunt.loadNpmTasks('grunt-capo');
@@ -34,7 +39,8 @@ of event name (e.g. `-e ap` will find all the events starting with these chars:
 **object**  -o --object - mediator object name (e.g. mediator, Backbone). Case sensitive.  
 **report**  -r --report - type of report. Options are: `html`, `cli`. **Default**
 is `html`. String value should be specified right after flag.  
-**strict**  --strict - throw error on sub for event with 0 pubs. **Default** `false`.
+**strict**  --strict - throw error on sub for event with 0 pubs. **Default** `false`.  
+**generate** -g --generate - generate file with listeners for all the triggers. **Default** `false`.  
 
 ### Basic Usage
 ```js
